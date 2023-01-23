@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultan GYM</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('img/GYM.jpg');
+            color: white;
+
+
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+            /*border:2px solid red;*/
+
+        }
+
+        .left img {
+            padding-left: 15px;
+            width: 50px;
+        }
+
+        .left div {
+            padding: 30;
+            text-align: center;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .mid {
+            display: block;
+            margin: 30px auto;
+            width: 30%;
+            /* border:2px solid green;*/
+            width: 600px;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /*border:2px solid yellow;*/
+
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: rgb(21, 18, 18);
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .navbar li a {
+            color: rgb(1, 143, 22);
+            text-decoration: none;
+            padding: 25px 23px;
+            font-weight: bold;
+            font-family: 'Arial Narrow Bold', sans-serif;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .container {
+            margin: 45px 10px;
+            padding: 50px;
+            width: 35%;
+            border-radius: 30px;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            /*border: 2px solid white;*/
+        }
+
+        .from input {
+            text-align: center;
+            display: block;
+            width: 350px;
+            padding: 8px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            margin: 10px auto;
+            width: 300px;
+        }
+
+        div.bottom {
+            border: 2px solid grey;
+            background-color: black;
+        }
+
+        .logo {
+            margin: 40px 20px 10px 10px;
+            border: 2px solid black;
+            background-color: gray;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .logo img {
+            padding-left: 15px;
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .logo div {
+            padding: 3px;
+            font-size: 9px;
+            color: black;
+            display: block;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+        }
+        .bottom h1{
+        display: inline-block;
+          margin: auto;
+          width: auto;
+          padding-top: 5px;
+          font-family: 'Arial Narrow Bold', sans-serif;
+        }
+       .bottom p{
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+       }
+       
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="image not found">
+            <div>Sultan Fitness</div>
+        </div>
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym</h1>
+        <form action="form.php">
+            <div class="from">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="from">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="from">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="from">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="bottom">
+        <div class="logo">
+            <img src="img/logo.png" alt="image not found">
+            <div>Sultan Fitness</div>
+        </div>
+       <h1>SULTAN FITNESS</h1>
+       <p>Thank You For Visiing Our Wedsite If You Want To Become Fit and Healthy. So, You Can Contact On Given Mobile Number or Mail On Given Gmail ID and Also Can Visit Given Address.</p>
+       <p>Mobile Number : 1234567891</p>
+       <p>Gmail ID : sltanfitness123@gmail.com</p>
+       <p>Chichvad Pune 22110 , Pune Maharasha.</p>
+    </div>
+</body>
+
+</html>
